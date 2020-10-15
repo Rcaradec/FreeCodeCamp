@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS774nGKKX3PLfp_YnUHfNbmKzDhI6Af_JaOg&usqp=CAU);
+  background-size: contain;
+}
+
+.entete {
+  text-align: center;
+  margin-top: 5%;
+  color: aliceblue;
+  font-size: 30px;
+}
+
+#main {
+  background: rgba(14, 146, 185, 0.8);
+  width: 30%;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 15px;
+  color: azure;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  display: flex;
+}
+
+.survey-form {
+  margin-left: 20px;
+}
+
+.label-group {
+  margin-left: 20px;
+}
+
+.input-group {
+  width: 90%;
+  border-radius: 10px;
+
+  margin-left: 20px;
+}
+
+#role-deroulant {
+  margin-left: 20px;
+  width: 90%;
+}
+
+.container-radio {
+  margin-left: 20px;
+}
+
+.feature {
+  margin-top: 0px;
+  margin-left: 20px;
+  width: 90%;
+}
+
+.checkB {
+  margin-left: 20px;
+}
+
+.commentaires {
+  margin-left: 20px;
+}
+
+#commentaire {
+  margin-left: 15px;
+}
+
+h4 {
+  margin-left: 20px;
+}
+
+#submit {
+  margin: 10px 0px 10px 150px;
+  padding: 10px 100px;
+  background: rgb(0, 68, 255);
+  border: 2px solid white;
+  color: aliceblue;
+}

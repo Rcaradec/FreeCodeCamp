@@ -1,0 +1,92 @@
+* {
+  color: rgb(54, 54, 54);
+}
+
+#main {
+  background: rgb(228, 228, 228);
+  height: 98%;
+  width: 98%;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0px;
+  margin-top: 20px;
+}
+
+#title {
+  text-align: center;
+  color: rgb(70, 27, 27);
+  font-weight: bold;
+  font-size: 30px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 50px;
+}
+
+#sous-titre {
+  font-size: 20px;
+  text-align: center;
+}
+
+#img-div {
+  width: 98%;
+  height: 98%;
+  margin-right: auto;
+  margin-left: auto;
+  background: rgb(255, 255, 255);
+  margin-bottom: 20px;
+}
+
+#image {
+  max-width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.date-gras {
+  font-weight: bold;
+}
+
+h3 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.liste {
+  margin-top: 60px;
+
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+li {
+  font-size: 16px;
+  font-weight: 500;
+
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.citation {
+  font-style: italic;
+  font-size: 16px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+.lien-site {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+
+#tribute-link {
+  color: rgb(107, 81, 114);
+}
