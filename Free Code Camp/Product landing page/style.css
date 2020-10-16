@@ -1,0 +1,129 @@
+* {
+  background: rgb(231, 211, 211);
+  font-family: "Lobster", cursive;
+}
+
+#header {
+  display: flex;
+  justify-content: space-around;
+  height: 200px;
+}
+
+#header-img {
+  height: 100px;
+  width: 100px;
+  border-radius: 20px;
+  margin-left: 30px;
+  margin-top: 20px;
+  box-shadow: 3px 3px 20px black;
+}
+
+#formulaire {
+  margin-top: 100px;
+  margin-right: auto;
+  margin-left: auto;
+}
+#email {
+  margin-left: 100px;
+}
+
+#nav-link {
+  margin-top: 50px;
+  margin-right: 100px;
+}
+#nav-link a {
+  margin-right: 40px;
+  font-size: 20px;
+}
+
+.accroche {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  align-items: center;
+  margin-top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+}
+/*Donner une largeur au conteneur en flexbox permet d'avoir nos boites avec les memes dimensions, quel que soi la taille du contenu et ce, tant que le flex basis=0 et le flex grow=1 (les boites n'ont pas de largeur initiale et par conséquent l'espace à l'intérieur du conteneur flex est partagé de maniere égale)
+  */
+
+.premium {
+  flex-basis: 0;
+  flex-grow: 1;
+}
+#logo-premium {
+}
+
+.quality {
+  flex-basis: 0;
+
+  flex-grow: 1;
+}
+
+.shipping {
+  flex-basis: 0;
+
+  flex-grow: 1;
+}
+
+.icones {
+  height: 50px;
+  width: 50px;
+  border-radius: 20px;
+  align-items: flex-start;
+}
+
+.video-window {
+  display: flex;
+  width: 100%;
+  margin-top: 150px;
+  justify-content: center;
+}
+
+iframe {
+  margin-left: auto;
+  margin-right: auto;
+}
+.cards {
+  display: inline-flex;
+  justify-content: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.card1 {
+  background: whitesmoke;
+  width: 15%;
+  height: 10%;
+  margin-right: 3%;
+  border: 2px solid black;
+}
+
+.card2 {
+  background: whitesmoke;
+  width: 15%;
+  height: 10%;
+  margin-right: 3%;
+  border: 2px solid black;
+}
+
+.card3 {
+  background: whitesmoke;
+  width: 15%;
+  height: 10%;
+  border: 2px solid black;
+}
+
+.cards h4 {
+  background: lightgray;
+  height: 15%;
+}
+
+.cards p {
+  background: whitesmoke;
+}
