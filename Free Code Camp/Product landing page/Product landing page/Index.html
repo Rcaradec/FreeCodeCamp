@@ -1,3 +1,14 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!-- 
+
+Hello Camper!
+
+For now, the test suite only works in Chrome! Please read the README below in the JS Editor before beginning. Feel free to delete this message once you have read it. Good luck and Happy Coding! 
+
+- The freeCodeCamp Team 
+
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,34 +20,46 @@
     <title>Product LP</title>
 </head>
 
-    <header id="header">
 
-        <div class="brand">
-        <img src="./Image/logo guitare.jpg" id="header-img">
-        <h2>Original Guitars</h2>
-        </div>
+    
         
-        <form id="formulaire">
-            <h1>Handcrafter, home-made masterpieces</h1>
-            <label for="mail-register" id="form" ></label>
-            <input type="email" id="email" placeholder="Enter your email adress">
-            <a href=" https://www.freecodecamp.com/email-submit" target="_blank"><button type="button" id="submit">GET STARTED</button></a>
-        </form>
+       
 
-        <nav id="nav-link">
-            <a href="" class="nav-link">Features</a>
-            <a href="" class="nav-link">How it works</a>
-            <a href="" class="nav-link">Pricing</a>
-        </nav>
-
-    </header>
+      
+    
 
 
     
 
 <body>
 
-   
+    <header id="header">
+    
+        <nav id="nav-link" class="fix">
+            <img src="./Image/logo guitare.jpg" id="header-img">
+            <h2>Original Guitars</h2>
+            <a href="" class="nav-link">Features</a>
+            <a href="" class="nav-link">How it works</a>
+            <a href="" class="nav-link">Pricing</a>
+            
+        </nav>
+    
+    
+    
+    
+    
+    </header>
+    
+
+
+    <form id="survey-form">
+        <h1 id="title">Handcrafter, home-made masterpieces</h1>
+        <label for="mail-register" id="form"></label>
+        <input type="email" id="email" placeholder="Enter your email adress" required="required">
+        <label for="name-register" id="name"></label>
+        <input type="text" id"name" placeholder="Enter your name" required="required">
+        <a href=" https://www.freecodecamp.com/email-submit" target="_blank"><button type="button" id="submit" >GET STARTED</button></a>
+    </form>
  
        
     <div class="accroche">
@@ -44,7 +67,7 @@
         <div class="premium">
             <img src="./logo premium.jpg" alt="logo premium" class="icones" id="logo-premium">
             <h3>Premium Materials</h3>
-            <p>Our guitars use the finest wood which is sourced locally. This will increase the longevity of your purchase.</p>
+            <p id="description">Our guitars use the finest wood which is sourced locally. This will increase the longevity of your purchase.</p>
         </div>
 
         <div class="shipping">
@@ -72,46 +95,61 @@
     </div>  
 
 
-      <div class="cards">
-            <div class="card1">
+    <div class="centered">
+            <section class="cards">
+
+                <article class="card">
                 <h4>Acoustic Guitar</h4>
                 <p>$600</p>
-                <p>Lorem ipsum</p><br>Lorem ipsum</p><br>Lorem ipsum</p><br>Lorem ipsum</p><br>
-            </div>
+                <p>Lorem ipsum</p>
+                <p>Lorem ipsum</p><br>
+                <button type="button" id="card-button">SELECT</button>
+                </article>
 
-             <div class="card2">
-            <h4>Classical Guitar</h4>
-            <p>$800</p>
-            <p>Lorem ipsum</p><br>Lorem ipsum</p><br>Lorem ipsum</p><br>Lorem ipsum</p><br>
-            </div>
+                 
+                <article class="card">    
+                <h4>Classical Guitar</h4>
+                <p>$800</p>
+                <p>Lorem ipsum</p>
+                <p>Lorem ipsum</p><br>
 
-            <div class="card3">
-            <h4>Electric Guitar</h4>
-            <p>$1000</p>
-            <p>Lorem ipsum</p><br>Lorem ipsum</p><br>Lorem ipsum</p><br>Lorem ipsum</p><br>
-        </div>
+                <button type="button" id="card-button">SELECT</button>
+
+                </article>
+                
+
+                <article class="card">    
+                <h4>Electric Guitar</h4>
+                <p>$1000</p>
+                <p>Lorem ipsum</p>
+                <p>Lorem ipsum</p><br>
+
+                <button type="button" id="card-button">SELECT</button>
+
+                </article>
+        </section>
+    </div>
+
 
 
         
             
-           
-</body>
 
 
-<footer>
 
-    <section class="ft-main">
-        <div class="ft-main-item">
-          <ul>
-            <li><a href="#">Privacy</a></li>
-            <li><a href="#">Terms</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-        <p>Copyright 2016, Original Guitars</p>
-           
-        </div>
-            
-                
-</footer>           
+    
+            <div class="nav-footer">
+                <div class="footer-links">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Contact</a><br>
+                <p>Copyright 2016, Original Guitars</p>
+                </div>
+
+            </div>
+   
+    </div>
+</body>            
+         
 
 </html>

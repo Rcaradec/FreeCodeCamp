@@ -3,10 +3,15 @@
   font-family: "Lobster", cursive;
 }
 
-#header {
+.fix {
+  color: red;
+  position: fixed;
   display: flex;
-  justify-content: space-around;
-  height: 200px;
+  justify-content: flex-end;
+
+  height: 100px;
+  width: 95%;
+  background: cyan;
 }
 
 #header-img {
@@ -14,28 +19,33 @@
   width: 100px;
   border-radius: 20px;
   margin-left: 30px;
-  margin-top: 20px;
   box-shadow: 3px 3px 20px black;
 }
 
-#formulaire {
+.fix h2 {
+  margin-left: 20px;
+  margin-top: 30px;
+  background: transparent;
+}
+
+.nav-link {
+  margin-top: 0px;
+  margin-left: 250px;
+  flex-basis: 0;
+  flex-grow: 1;
+
+  font-size: 20px;
+  color: rgb(240, 14, 14);
+  background: darkgreen;
+}
+
+#survey-form {
   margin-top: 100px;
   margin-right: auto;
   margin-left: auto;
 }
 #email {
   margin-left: 100px;
-}
-
-#nav-link {
-  margin-top: 50px;
-  margin-right: 100px;
-  color: #ff2f0a;
-}
-#nav-link a {
-  margin-right: 40px;
-  font-size: 20px;
-  color: rgb(255, 255, 255);
 }
 
 .accroche {
@@ -96,44 +106,65 @@ iframe {
   margin-left: auto;
   margin-right: auto;
 }
+
 .cards {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  flex-wrap: wrap;
   margin-top: 50px;
-  width: 100%;
 }
 
-.card1 {
-  background: whitesmoke;
-  width: 15%;
-  height: 10%;
-  margin-right: 3%;
+.card {
+  flex: 0 1 calc(33% - 5em); /* browser will grab 33% of the space and remove 5em from it, 33% car on veut diviser la largeur totale en 3 elements, avec une marge de 5em entre eux */
   border: 2px solid black;
-}
-
-.card2 {
-  background: whitesmoke;
-  width: 15%;
-  height: 10%;
-  margin-right: 3%;
-  border: 2px solid black;
-}
-
-.card3 {
-  background: whitesmoke;
-  width: 15%;
-  height: 10%;
-  border: 2px solid black;
+  text-align: center;
+  margin: 5px;
+  background: lightgoldenrodyellow;
 }
 
 .cards h4 {
-  background: lightgray;
-  height: 15%;
+  padding: 10px;
+  margin-top: 0px;
+  background: rgb(177, 177, 177);
+}
+.card p {
+  background: transparent;
 }
 
-.cards p {
-  background: whitesmoke;
+.card button {
+  padding: 10px 40px;
+  margin-bottom: 10px;
+}
+
+.card button:hover {
+  cursor: pointer;
+}
+
+.nav-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-links {
+  background: rgb(199, 198, 198);
+  float: right;
+  width: 1000px;
+  margin-top: 40px;
+}
+
+.footer-links a {
+  float: right;
+  margin: 10px;
+  margin-right: 5px;
+
+  color: black;
+  background: transparent;
+}
+
+.footer-links p {
+  text-decoration: transparent;
+  margin-right: 5px;
+  text-align: end;
+  margin-top: 20px;
+  background: transparent;
 }
