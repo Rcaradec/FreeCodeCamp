@@ -1,0 +1,54 @@
+* {
+  background: lightgray;
+}
+
+.navbar {
+  height: 100%;
+  width: 250px;
+  display: table-column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: white;
+  z-index: 1;
+  overflow-x: hidden;
+}
+
+.navbar a {
+  display: block;
+  padding: 20px;
+  border: 1px solid white;
+  background: black;
+  color: whitesmoke;
+  text-align: center;
+}
+
+#JS-doc {
+  padding: 30px;
+  background: rgb(36, 36, 36);
+}
+
+main {
+  margin-left: 250px;
+}
+
+#gray_bg,
+#gray_bg_DeclareV1,
+#gray_bg_DeclareV2,
+#gray_bg_DeclareV3,
+#gray_bg_Variable_scope1,
+#gray_bg_Variable_scope2,
+#gray_bg_ConstantsV1,
+#gray_bg_ConstantsV2,
+#gray_bg_ConstantsV3,
+#gray_bg_IfV1,
+#gray_bg_IfV2,
+#gray_bg_IfV3,
+#gray_bg_IfV4,
+#gray_bg_WhileV1,
+#gray_bg_WhileV2,
+#Function_declarationsV1,
+#Function_declarationsV2 {
+  padding: 20px;
+  background: gray;
+}
