@@ -1,0 +1,101 @@
+.header {
+  // Hamburger Open styles
+  &.open {
+    .header__menu {
+      > span:first-child {
+        transform: rotate(45deg);
+      }
+
+      > span:nth-child(2) {
+        opacity: 0;
+      }
+
+      > span:last-child {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+
+  .overlay {
+    opacity: 0;
+    position: fixed;
+    top: 3.75rem; // hauteur de la nav barre
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: linear-gradient($darkBlue, transparent);
+  }
+
+  nav {
+    padding: 1.0625rem 1.5rem;
+  }
+
+  &__logo {
+    img {
+      width: 8.8125rem;
+      height: 1.375rem;
+    }
+  }
+
+  &__menu {
+    //mobile menu
+    // ">" specifie l'enfant direct
+    > span {
+      display: block; // car par defaut le span est inline
+      width: 26px;
+      height: 2px;
+      background-color: $darkBlue;
+      transition: all 300ms ease-in-out;
+      transform-origin: 3.5px 1px;
+
+      &:not(:last-child) {
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  &__links {
+    a {
+      position: relative;
+      font-size: $font-small;
+      color: $grayishBlue;
+      transition: color 300ms ease-in-out;
+
+      &:not(:last-child) {
+        margin-right: 32px;
+      }
+
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 5px;
+        left: 0;
+        right: 0;
+        bottom: -30px;
+        background: linear-gradient(to right, $limeGreen, $brightCyan);
+        opacity: 0; // la mettre à 0 de base (avec une transition) et à 1 sur le hover .
+        transition: 300ms ease-in-out;
+      }
+      &:hover {
+        color: $darkBlue;
+
+        &::before {
+          background: linear-gradient(to right, $limeGreen, $brightCyan);
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &__cta {
+    font-size: $font-small;
+    color: $white;
+    transition: opacity 300ms ease-in-out;
+
+    &:hover {
+      color: $darkBlue;
+      opacity: 0.75;
+    }
+  }
+}
